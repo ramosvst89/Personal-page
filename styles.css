@@ -199,7 +199,7 @@ width: max-content;
   align-items: center;
   height: 500px;
   font-size: 25px;
-  width: device-width;
+  width: 100vw;
 }
 .sobre {
   background-color: #2eadff;
@@ -216,10 +216,10 @@ width: max-content;
   margin: 40px;
   font-size: 20px;
 }
-/* From Uiverse.io by vamsidevendrakumar */ 
+
 .card {
   width: 450px;
-  height: 510px;
+  height: 600px;
   perspective: 1000px;
 }
 
@@ -236,7 +236,7 @@ width: max-content;
 }
 .imgcard{
   
-  height: 500px;
+  height: 600px;
   border-radius: 10px;
 }
 .card-front,
