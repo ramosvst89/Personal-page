@@ -1,0 +1,190 @@
+/* Estilo para a barra de navegação */
+.container {
+  width: device-width; 
+  display: flex;
+  
+  background-color: #06023e;
+}
+.navbar {
+  display: flex; /* Activa flexbox */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between; /* Distribuye los elementos (logo a la izquierda, navegación a la derecha) */
+  position: fixed;
+  background-color: #919191; /* Fondo de la barra */
+  color: #fff; /* Color del texto */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Capa más alta */
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+.navbar nav ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  display: flex; /* Alinea los elementos del menú en línea */
+  gap: 1.5rem; /* Espaciado entre los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: #fff; /* Color de los enlaces */
+  font-weight: bold;
+  
+}
+
+.navbar nav ul li a:hover {
+  color: #ff6f61; /* Color al pasar el mouse */
+}
+.nav{
+  margin-right: 200px;
+}
+/* seção de apresentação*/
+
+.foto-perfil{
+  border-radius: 30%;
+  
+  height: 550px;
+  margin-right: 20px;
+}
+.sessao-apresentacao{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  /*margin-top: 80px;
+  margin-left: 30px;
+  padding-bottom: 80px;*/
+  padding: 80px 40px 80px 40px;
+}
+/*card: */
+
+.notification {
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+  position: relative;
+  width: 700px;
+  height: 450px;
+  background: #29292c;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  --gradient: linear-gradient(to bottom, #2eadff, #3d83ff, #7e61ff);
+  --color: #32a6ff
+  
+}
+
+.notification:before {
+  position: absolute;
+  content: "";
+  inset: 0.0625rem;
+  border-radius: 0.9375rem;
+  background: #18181b;
+  z-index: 2
+}
+
+.notification:after {
+  position: absolute;
+  content: "";
+  width: 0.25rem;
+  inset: 0.65rem auto 0.65rem 0.5rem;
+  border-radius: 0.125rem;
+  background: var(--gradient);
+  transition: transform 300ms ease;
+  z-index: 4;
+}
+
+.notification:hover:after {
+  transform: translateX(0.15rem)
+}
+
+.notititle {
+  color: var(--color);
+  padding: 0.65rem 0.25rem 0.4rem 1.25rem;
+  font-weight: 500;
+  font-size: 40px;
+  transition: transform 300ms ease;
+  z-index: 5;
+}
+
+.notification:hover .notititle {
+  transform: translateX(0.15rem)
+}
+
+.notibody {
+  color: #99999d;
+  padding: 0 1.25rem;
+  transition: transform 300ms ease;
+  z-index: 5;
+  font-size: 25px;
+}
+
+.notification:hover .notibody {
+  transform: translateX(0.25rem)
+}
+
+.notiglow,
+.notiborderglow {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle closest-side at center, white, transparent);
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.notiglow {
+  z-index: 3;
+}
+
+.notiborderglow {
+  z-index: 1;
+}
+
+.notification:hover .notiglow {
+  opacity: 0.1
+}
+
+.notification:hover .notiborderglow {
+  opacity: 0.1
+}
+
+.note {
+  color: var(--color);
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 0.9rem;
+  width: 75%;
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items:; /* Alinha os elementos à esquerda */
+  }
+
+  
+
+  .navbar .logo img {
+    height: 40px; /* Reduz o tamanho da logo */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px; /* Reduz o padding */
+  }
+
+  .navbar nav ul {
+    gap: 5px; /* Reduz ainda mais o espaçamento entre os itens */
+  }
+
+  
+}
