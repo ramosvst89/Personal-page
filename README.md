@@ -1,2 +1,3 @@
 # Personal-page
-Pagina pessoal contendo minha apresentação, habilitades, projetos e meios de contato
+Pagina pessoal contendo minha apresentação, habilitades, projects e meios de contact
+

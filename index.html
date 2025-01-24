@@ -2,182 +2,147 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando R Ramos - Desenvolvedor de Sistemas</title>
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fernando R Ramos - Desenvolvedor de Sistemas</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Giga:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar" id="#barrasup">
-            <div class="logo">
-                <img class="logo" src="img/Fernando R Ramos (1).png" alt="logo fernando">
-            </div>
-            <div class="nav">
-                <nav>
-                    <ul>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#about">
+				<img class="logo" src="img/logo.svg" alt="logo fernando">
+				</a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#about">Sobre mim</a></li>
+					<li><a href="#skills">Habilidades</a></li>
+					<li><a href="#background">Background</a></li>
+					<li><a href="#contact">Contatos</a></li>
+				</ul>
+			</nav>
+			<button id="menu-toggle" class="nav-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
 
-                        <li><a href="#apresentacao">Sobre mim</a></li>
-                        <li><a href="#habilidade">Habilidades</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contato">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="sessao-apresentacao" id="apresentacao">
-            <div class="img-profile">
-                <img class="foto-perfil" src="img/foto perfil.jpg" alt="Foto do Perfil de Fernando Ramos">
-            </div>
+	<main>
+		<section id="about">
+			<div class="container">
+				<div class="grid">
+					<div class="picture">
+						<img src="img/foto perfil.jpg" alt="Foto do Perfil de Fernando Ramos">
+					</div>
+					<div class="notification">
+						<div class="notibody">
+							<h2>Apresentação</h2>
+							<p>👋 Olá! Sou Fernando Rafael Ramos, estudante do 4º período de Análise e Desenvolvimento de Sistemas pelo Senac/PR.</p>
+							<p>Apaixonado por motociclismo, viagens e novas culturas, comecei minha transição para a área de tecnologia em 2023, motivado pela transformação digital e desafios, investindo em formação técnica e novas habilidades.</p>
 
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div class="notification">
-                <div class="notiglow"></div>
-                <div class="notiborderglow"></div>
-                <div class="notititle">Apresentação</div>
-                <div class="notibody">
-                    <p> Olá! </p>
-                    <p>
+		<section id="skills">
+			<div class="container column">
+				<h2>Habilidades</h2>
+				<div class="grid small">
+					<div class="skill">
+						<img src="img/css-3.png">
+					</div>
+					<div class="skill">
+						<img src="img/html-5.png">
+					</div>
+					<div class="skill">
+						<img src="img/java.png">
+					</div>
+					<div class="skill">
+						<img src="img/mysql.png">
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        Meu nome é Fernando Rafael Ramos, sou estudante de Tecnologia em Análise e Desenvolvimento de
-                        Sistemas pelo Senac/PR, atualmente no 4º período. Sou apaixonado por motociclismo,viagens e
-                        experiências que me conectam com novas culturas e ampliam minha visão de mundo. Em 2023,
-                        motivado pela transformação digital e por novos desafios, iniciei minha transição para a área de
-                        tecnologia, investindo em formação técnica e desenvolvimento de novas habilidades.</p>
+		<section id="background">
+			<div class="container">
+				<div class="grid">
+					<div class="notification">
+						<div class="notibody">
+							<h2>Background</h2>
+							<p>
+								 Em meus 10 anos de experiência construí uma carreira sólida na odontologia, realizando atendimentos em consultórios particulares, ministrando aulas e coordenando cursos de pós-graduação.
+							</p>
+							<p>
+								Nesta última década, pude desenvolver competências como: liderança, comunicação e organização, trabalho em equipe e muito mais, que agora aplico no universo da tecnologia para alcançar resultados significativos e impactantes.
+							</p>
+						</div>
+					</div>
+					<div class="picture">
+						<img src="img/micro aula.jpg" alt="Aula de Microscopia">
+					</div>
+				</div>
+			</div>
+		</section>
 
-                    <p>
-                </div>
-            </div>
-        </div>
-        <div class="sessao-apresentacao2">
-
-            <div class="card2">
-
-                <p class="small-desc">
-                    Antes disso, construí uma carreira sólida na odontologia, com 10 anos de experiência. Atuei como
-                    professor em cursos de pós-graduação, coordenei programas de especialização em endodontia e realizei
-                    atendimentos em consultórios particulares. Essa trajetória me proporcionou competências como
-                    liderança, comunicação e organização, que agora aplico no universo da tecnologia para alcançar
-                    resultados significativos e impactantes.
-                </p>
-
-            </div>
-            <div class="card">
-                <div class="card-inner">
-                    <div class="card-front">
-                        <img class="imgcard" src="./img/atendimento.jpg" alt="">
-                    </div>
-                    <div class="card-back">
-                        <img class="imgcard" src="./img/micro aula.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="mark" id="habilidade">habilidades</div>
-        <div class="habilidades">
-
-            <div>
-                
-                <div class="card-container">
-                    <div class="card3">
-                        <div class="front-content">
-                            <img class="icon" src="/new personal page/img/html-5.png" alt="HTML 5">
-                        </div>
-                        <div class="content">
-                            <p class="heading">HTML 5</p>
-                            <p>
-                                Conhecimento adquirido durante as aulas ministradas na faculdade e cursos online.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div>
-                
-                <div class="card-container">
-                    <div class="card3">
-                        <div class="front-content">
-                            <img class="icon" src="/Personal-page/img/css-3.png" alt="CSS 3">
-                        </div>
-                        <div class="content">
-                            <p class="heading">CSS 3</p>
-                            <p>
-                                Conhecimento adquirido durante as aulas ministradas na faculdade e cursos online.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                
-                <div class="card-container">
-                    <div class="card3">
-                        <div class="front-content">
-                            <img class="icon" src="/Personal-page/img/java.png" alt="JAVA">
-                        </div>
-                        <div class="content">
-                            <p class="heading">JAVA</p>
-                            <p>
-                                Conhecimento adquirido durante as aulas ministradas na faculdade e cursos online.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card-container">
-                    <div class="card3">
-                        <div class="front-content">
-                            <img class="icon" src="/Personal-page/img/mysql.png" alt="MySQL">
-                        </div>
-                        <div class="content">
-                            <p class="heading">MySQL</p>
-                            <p>
-                               Conhecimento adquirido durante as aulas ministradas na faculdade e cursos online.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="projetos">
-            <span>EM CONSTRUÇÃO!</span>
-            <p>Em breve terei projetos a serem apresentados</p>
-        </div>
+		<section id="contact">
+			<div class="container column">
+				<h2>Entre em contato!</h2>
+				<div class="grid">
+					<div class="contact">
+						<a href="https://github.com/ramosvst89" target="_blank">
+							<img src="img/github.png">
+							<span>ramosvst89</span>
+						</a>
+					</div>
+					<div class="contact">
+						<a href="https://www.linkedin.com/in/fernandorramos/" target="_blank">
+							<img src="img/linkedin.png">
+							 <span>Fernando R Ramos</span>
+						</a>
+					</div>
+					<div class="contact">
+						<a href="https://wa.me/5511912345678" target="_blank">
+							<img src="img/whatsapp.png">
+							<span>(41) 99999-9999</span>
+						</a>
+					</div>
+					<div class="contact">
+						<a href="mailto:ramosvst89@gmailcom" target="_blank">
+							<img src="img/email.png">
+							<span>ramosvst89@gmail.com</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
 
+	<script>
+		const menuToggle = document.querySelector('#menu-toggle');
+		const nav = document.querySelector('nav');
 
+		menuToggle.addEventListener('click', () => {
+			nav.classList.toggle('nav-open');
+		});
 
-        <div class="contato" id="contato">
-
-            <div id="email">
-                <!-- From Uiverse.io by gharsh11032000 -->
-                <div class="form-container">
-                    <form class="form">
-                        <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="text" id="email" name="email" required placeholder="Digite seu e-mail">
-                        </div>
-                        <div class="form-group">
-                            <label for="textarea">Mensagem:</label>
-                            <textarea name="textarea" id="textarea" rows="10" cols="50" required
-                                placeholder="Digite sua mensagem">          </textarea>
-                        </div>
-                        <button class="form-submit-btn" type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-            <div id="redes-sociais">
-
-            </div>
-        </div>
-
-
-    </div>
+		document.addEventListener('click', (e) => {
+			if (e.target !== menuToggle && e.target !== nav) {
+				nav.classList.remove('nav-open');
+			}
+		});
+	</script>
 
 </body>
-
 </html>
